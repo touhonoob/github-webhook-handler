@@ -79,7 +79,7 @@ function create (options) {
         , protocol: req.protocol
         , host    : req.headers['host']
         , url     : req.url
-        , headers : req.headers
+        , request : req
       }
 
       handler.emit(event, emitData)
